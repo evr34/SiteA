@@ -8,7 +8,7 @@
     <style>
         h1 {
             font-family: Arial;
-            font-size: 30pt;
+            font-size: 14pt;
             color: blue;
             text-shadow: 2px 2px 2px black;
         }
@@ -17,12 +17,19 @@
 
 
 <body>
-    <form action="#" method="post" name="formulario01">
+    <form action="" method="post" name="formulario_cadastro_usuario">
         <h1>CADASTRE SEU LOGIN</h1>
         <p>
-            <input type="text" name="texto" placeholder="digite seu nome"/>
-            <input type="email" name="email" placeholder="digite seu e-mail"/>
-            <input type="password" name="senha" placeholder="digite sua senha"/>
+            <input type="text" name="nome_novo_usuario" placeholder="digite seu nome"/>
+            <input type="email" name="email_novo_usuario" placeholder="digite seu e-mail"/>
+            <input type="password" name="senha_novo_usuario" placeholder="digite sua senha"/>
+            <input type="submit" value="Cadastrar"/>
+        </p>
+    </form>
+    <form action="" method="post" name="formulario_cadastro_item">
+        <h1>CADASTRE NOVO ITEM PARA LISTA DE EMPRÉSTIMOS</h1>
+        <p>
+            <input type="text" name="texto1" placeholder="nome do item"/>
             <input type="submit" value="Cadastrar"/>
         </p>
     </form>
