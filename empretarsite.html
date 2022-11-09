@@ -5,40 +5,47 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Emprestando Coisas</title>
-    <style>
-        h1 {
-            font-family: Arial;
-            font-size: 14pt;
-            color: blue;
-            text-shadow: 2px 2px 2px black;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    
 </head>
 
-
 <body>
-    <form action="" method="post" name="formulario_cadastro_usuario">
-        <h1>CADASTRE SEU LOGIN</h1>
-        <p>
-            <input type="text" name="nome_novo_usuario" placeholder="digite seu nome"/>
-            <input type="email" name="email_novo_usuario" placeholder="digite seu e-mail"/>
-            <input type="password" name="senha_novo_usuario" placeholder="digite sua senha"/>
-            <input type="submit" value="Cadastrar"/>
-        </p>
-    </form>
-    <form action="" method="post" name="formulario_cadastro_item">
-        <h1>CADASTRE NOVO ITEM PARA LISTA DE EMPRÉSTIMOS</h1>
-        <p>
-            <input type="text" name="texto1" placeholder="nome do item"/>
-            <input type="submit" value="Cadastrar"/>
-        </p>
-    </form>
-    <ol start="1">
-        <li>Fabricador</li>
-        <li>Gerador Elétrico</li>
-        <li>Mesa de Alquimia</li>
-        <li>Gerador Tek</li>
-    </ol>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>O QUE VOCÊ QUER EMPRESTADO???</h1>
+                <h2>REALIZE SEU SONHO!!!</h2>
+            </hgroup>
+            <nav>
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="empretarsite.html">Home</a></li>
+                    <li><a href="">Itens para emprestar</a></li>
+                </ul>
+            </nav>    
+        </header>
+
+        <form action="" method="post" name="formulario_cadastro_usuario">
+            <h1>CADASTRE SEU LOGIN</h1>
+                <input type="text" name="nome_novo_usuario" placeholder="digite seu nome"/><br/>
+                <input type="email" name="email_novo_usuario" placeholder="digite seu e-mail"/><br/>
+                <input type="password" name="senha_novo_usuario" placeholder="digite sua senha"/><br/>
+                <input type="submit" value="Cadastrar"/>
+        </form>
+        <form action="" method="post" name="formulario_cadastro_item">
+            <h1>CADASTRE NOVO ITEM PARA LISTA DE EMPRÉSTIMOS</h1>
+                <input type="text" name="texto1" placeholder="nome do item"/><br/>
+                <input type="submit" value="Cadastrar"/>
+        </form>
+        <h1>LISTA DE ITENS</h1>
+            <ul>
+                <li>Ferrari</li>
+                <li>Armadura do Homem de Ferro</li>
+                <li>Martelo do Thor</li>
+                <li>Foguete do Elon Musk</li>
+            </ul>
+    </div>    
 </body>
 
 </html>
